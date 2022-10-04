@@ -3,13 +3,20 @@
     <div class="card-body container">
       <div class="row">
         <div class="col-sm-8 main_details">
-          <h5 class="card-title">{{ item.time }} {{ item.date }}</h5>
-          <p>
-            ชื่อเจ้าของ : {{ item.oname }} ชื่อสัตว์เลี้ยง : {{ item.pname }}
-            <br />
-            ประเภทการนัดหมาย : {{ item.type }} หมายเหตุ : {{ item.note }}
-          </p>
-          <sub>หากมาช้าเกิน 30 นาทีจากการนัดหมาย จะต้องทำการนัดหมายใหม่</sub>
+          <h5 class="card-title">
+            <b style="font-size: xx-large">{{ item.time }}</b> &emsp;{{
+              item.date
+            }}
+          </h5>
+          <div class="row" style="line-height:200%;">
+            <div class="col-sm-7" >
+              ชื่อเจ้าของ : {{ item.oname }} <br> ประเภทการนัดหมาย : {{ item.type }}
+            </div>
+            <div class="col-sm-4">
+              ชื่อสัตว์เลี้ยง : {{ item.pname }} <br> หมายเหตุ : {{ item.note }}
+            </div>
+          </div>
+          <sub> - หากมาช้าเกิน 30 นาทีจากการนัดหมาย จะต้องทำการนัดหมายใหม่</sub>
         </div>
         <div class="col-sm-4 sub_details d-flex justify-content-center">
           <h5>
@@ -60,14 +67,26 @@ export default {
 </script>
 
 <style scoped>
+.card {
+  border: none;
+}
 .main_details {
+  position: relative;
   border-radius: 15px;
   padding: 25px;
   background-color: #f9f9f9;
 }
+.main_details::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  border-right: 2px dashed;
+  height: 75%;
+  width: 95%;
+}
 .sub_details {
   border-radius: 15px;
-  padding: 25px;
+  padding: 30px;
   background-color: #f9f9f9;
 }
 </style>
