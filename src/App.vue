@@ -1,14 +1,15 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import AppointmentCard from "./components/AppointmentCard.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
   <nav class="nav">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link" href="#">Link</a>
-  </nav>
+  <div class="container-fluid">
+    <Navbar/>
+  </div>
+</nav>
   <div class="container">
     <div class="row">
       <div class="col-md-3 d-flex justify-content-center">
