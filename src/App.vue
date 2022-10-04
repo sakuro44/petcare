@@ -4,32 +4,32 @@ import AppointmentCard from "./components/AppointmentCard.vue";
 </script>
 
 <template>
-  <nav class="nav border">
+  <nav class="nav">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
     <a class="nav-link" href="#">Link</a>
     <a class="nav-link" href="#">Link</a>
   </nav>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-md-3 border d-flex justify-content-center">
-        <div class="btn-group-vertical">
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
+      <div class="col-md-3 d-flex justify-content-center">
+        <div class="list-group list-group-flush" style="margin-top: 20%; border-top: 2px solid;">
+          <button type="button" class="list-group-item list-group-item-action pf-l">
             ข้อมูลของฉัน
           </button>
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
+          <button type="button" class="list-group-item list-group-item-action pf-l">
             ข้อมูลสัตว์เลี้ยง
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-block">
+          <button type="button" class="list-group-item list-group-item-action pf-l">
             รายการการนัดหมาย
           </button>
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
+          <button type="button" class="list-group-item list-group-item-action pf-l" style="border-bottom: 2px solid;">
             ประวัติการใช้บริการ
           </button>
         </div>
       </div>
 
-      <div class="col-md-9 border">
-        <h1>รายการการนัดหมาย</h1>
+      <div class="col-md-9">
+        <h3 style="padding-left:1%;">รายการการนัดหมาย</h3>
         <AppointmentCard />
       </div>
     </div>
@@ -37,4 +37,11 @@ import AppointmentCard from "./components/AppointmentCard.vue";
 </template>
 
 <style>
+.pf-l {
+  font-size: medium;
+  color: #737373;
+  padding-left: 20%;
+  height: 50px;
+  width: 225px;
+}
 </style>
