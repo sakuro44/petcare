@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import AppointmentCard from "./components/AppointmentCard.vue";
 import Navbar from "./components/Navbar.vue";
+import ListButton from "./components/ListButton.vue";
 </script>
 
 <template>
@@ -13,24 +14,10 @@ import Navbar from "./components/Navbar.vue";
   <div class="container" style="margin-top: 7%;">
     <div class="row">
       <div class="col-md-3 d-flex justify-content-center">
-        <div class="list-group list-group-flush" style="margin-top: 20%; border-top: 2px solid;">
-          <button type="button" class="list-group-item list-group-item-action pf-l">
-            ข้อมูลของฉัน
-          </button>
-          <button type="button" class="list-group-item list-group-item-action pf-l">
-            ข้อมูลสัตว์เลี้ยง
-          </button>
-          <button type="button" class="list-group-item list-group-item-action pf-l">
-            รายการการนัดหมาย
-          </button>
-          <button type="button" class="list-group-item list-group-item-action pf-l" style="border-bottom: 2px solid;">
-            ประวัติการใช้บริการ
-          </button>
-        </div>
+        <ListButton />
       </div>
 
       <div class="col-md-9">
-        <h3 style="padding-left:1%;">รายการการนัดหมาย</h3>
         <AppointmentCard />
       </div>
     </div>
