@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar.vue";
     <Navbar/>
   </div>
 </nav>
-  <div class="container">
+  <div class="container" style="margin-top: 7%;">
     <div class="row">
       <div class="col-md-3 d-flex justify-content-center">
         <div class="list-group list-group-flush" style="margin-top: 20%; border-top: 2px solid;">
