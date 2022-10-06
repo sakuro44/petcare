@@ -68,6 +68,9 @@ export default {
 </script>
 
 <style scoped>
+  *{
+    font-family: 'Kanit', sans-serif;
+  }
 .card {
   border: none;
 }

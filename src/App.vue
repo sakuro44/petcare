@@ -38,6 +38,11 @@ import Navbar from "./components/Navbar.vue";
 </template>
 
 <style>
+  *{
+    font-family: 'Kanit', sans-serif;
+    padding-top: 7px;
+  }
+  
 .pf-l {
   font-size: medium;
   color: #737373;
