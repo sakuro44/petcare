@@ -59,6 +59,7 @@ nav {
     outline-style: solid;
     outline-color: #3ca0e7;
     outline-width: 4px;
+    background: white;
     
     
 

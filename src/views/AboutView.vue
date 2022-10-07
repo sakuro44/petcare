@@ -1,15 +1,41 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <nav>
+    <div class="container-fluid">
+      <Navbar />
+    </div>
+  </nav>
+  <div class="container" style="margin-top: 7%">
+    <div class="row">
+      <div class="col-md-3 d-flex justify-content-center">
+        <ListButton />
+      </div>
+      <div class="col-md-9">
+        <AppointmentForm/>
+      </div>
+    </div>
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script setup>
+import { RouterLink, RouterView } from "vue-router";
+import Navbar from "../components/Navbar.vue";
+import AppointmentCard from "../components/AppointmentCard.vue";
+import ListButton from "../components/ListButton.vue";
+import AppointmentForm from "../components/AppointmentForm.vue";
+
+</script>
+  
+  <style>
+* {
+  font-family: "Kanit", sans-serif;
+  padding-top: 7px;
+}
+
+.pf-l {
+  font-size: medium;
+  color: #737373;
+  padding-left: 20%;
+  height: 50px;
+  width: 225px;
 }
 </style>

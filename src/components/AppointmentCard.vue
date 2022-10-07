@@ -1,5 +1,5 @@
 <template>
-  <h3 style="padding-left:1%;">รายการการนัดหมาย</h3>
+  <h3 style="padding-left: 1%">รายการการนัดหมาย</h3>
   <div class="card" v-for="item in items" v-bind:key="item.id">
     <div class="card-body container">
       <div class="row">
@@ -9,29 +9,38 @@
               item.date
             }}
           </h5>
-          <div class="row" style="line-height:200%;">
-            <div class="col-sm-7" >
-              ชื่อเจ้าของ : {{ item.oname }} <br> ประเภทการนัดหมาย : {{ item.type }}
+          <div class="row" style="padding-top: 0px; line-height: 200%">
+            <div class="col-sm-7">
+              ชื่อเจ้าของ : {{ item.oname }} <br />
+              ประเภทการนัดหมาย : {{ item.type }}
             </div>
             <div class="col-sm-4">
-              ชื่อสัตว์เลี้ยง : {{ item.pname }} <br> หมายเหตุ : {{ item.note }}
+              ชื่อสัตว์เลี้ยง : {{ item.pname }} <br />
+              หมายเหตุ : {{ item.note }}
             </div>
           </div>
           <sub> - หากมาช้าเกิน 30 นาทีจากการนัดหมาย จะต้องทำการนัดหมายใหม่</sub>
         </div>
         <div class="col-sm-4 sub_details d-flex justify-content-center">
-          <h5>
-            BOOKING REF <b>{{ item.bookingref }}</b>
+          <h5>BOOKING REF <b>{{ item.caseID }}</b
+            ><br>
+            <BarcodeGenerator :value="'1VC123'" :format="'CODE39'" :lineColor="'#000000'" :width="1" :height="40"
+      :elementTag="'img'" />
           </h5>
+          
         </div>
       </div>
     </div>
   </div>
 </template>
   
+
 <script>
+import BarcodeGenerator from "./BarcodeGenerator.vue";
+
 export default {
-  name : 'AppointmentCard',
+  name: "AppointmentCard",
+  components: { BarcodeGenerator} ,
   data() {
     return {
       items: [
@@ -42,7 +51,7 @@ export default {
           pname: "ส้มส้ม",
           type: "นัดหมายสัตว์แพทย์",
           note: "รับวัคซีนรวม",
-          bookingref: "1VC123",
+          caseID: "1VC123",
         },
         {
           time: "10:30 AM",
@@ -51,27 +60,19 @@ export default {
           pname: "ส้มส้ม",
           type: "นัดหมายสัตว์แพทย์",
           note: "รับวัคซีนรวม",
-          bookingref: "1VC123",
-        },
-        {
-          time: "10:30 AM",
-          date: "17 กันยายน 2565",
-          oname: "Alex Fol",
-          pname: "ส้มส้ม",
-          type: "นัดหมายสัตว์แพทย์",
-          note: "รับวัคซีนรวม",
-          bookingref: "1VC123",
+          caseID: "1VC123",
         },
       ],
     };
   },
+ 
 };
 </script>
 
 <style scoped>
-  *{
-    font-family: 'Kanit', sans-serif;
-  }
+* {
+  font-family: "Kanit", sans-serif;
+}
 .card {
   border: none;
 }
