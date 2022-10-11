@@ -10,7 +10,7 @@
         <ListButton />
       </div>
       <div class="col-md-8">
-        <AppointmentForm/>
+        <MyInformation/>
       </div>
     </div>
   </div>
@@ -22,8 +22,7 @@ import Navbar from "../components/Navbar.vue";
 import AppointmentCard from "../components/AppointmentCard.vue";
 import ListButton from "../components/ListButton.vue";
 import AppointmentForm from "../components/AppointmentForm.vue";
-import HistoryCardVet from "../components/HistoryCardVet.vue"
-
+import MyInformation from "../components/MyInformation.vue"
 
 </script>
   
