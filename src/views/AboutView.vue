@@ -19,10 +19,8 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "../components/Navbar.vue";
-import AppointmentCard from "../components/AppointmentCard.vue";
 import ListButton from "../components/ListButton.vue";
-import AppointmentForm from "../components/AppointmentForm.vue";
-import MyInformation from "../components/MyInformation.vue"
+
 
 </script>
   
