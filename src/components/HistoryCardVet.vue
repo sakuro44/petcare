@@ -1,6 +1,6 @@
 <template>
   <h3 style="padding-left: 1%">ประวัติการใช้บริการ</h3>
-  <div class="card shadow" v-for="item in items" v-bind:key="item.id">
+  <div class="card shadow" v-for="item in list" v-bind:key="item.id">
     <div class="card-body container" style="padding: 10px;">
       <div class="row">
         <div class="col-sm">
@@ -46,7 +46,7 @@ export default {
   name: "HistoryCardVet",
   data() {
     return {
-      items: [
+      list: [
         {
           caseID: "1VC123",
           type: "นัดหมายบริการ",

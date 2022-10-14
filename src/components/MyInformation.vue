@@ -1,9 +1,9 @@
 <template>
   <h3 style="text-align: center; padding-left: 1%">รายการการนัดหมาย</h3>
   <fieldset>
-    <legend style="margin-left: 2%">แก้ไขข้อมูลส่วนตัว</legend>
-    <form>
-      <div class="container">
+    <legend>แก้ไขข้อมูลส่วนตัว</legend>
+    <form style="padding: 0%;">
+      <div class="container" style="padding-top: 0%;">
         <div class="row">
           <div class="col">
             <label for="exampleFormControlInput1"
@@ -79,6 +79,11 @@ fieldset{
     border-radius: 10px;
     padding: 2%;
 }
+legend{
+  margin-left: 2%;
+  margin-bottom: 0%;
+
+}
 .form-control {
     height: 35px;
 }
@@ -86,7 +91,7 @@ fieldset{
     padding-top: 0px;
 }
 .row{
-    margin-top: 2%;
+    margin-top: 0%;
     margin-bottom: 1%;
 }
 

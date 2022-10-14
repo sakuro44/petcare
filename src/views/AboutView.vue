@@ -10,7 +10,7 @@
         <ListButton />
       </div>
       <div class="col-md-8">
-        <MyInformation/>
+        <PetInformationCard/>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "../components/Navbar.vue";
 import ListButton from "../components/ListButton.vue";
-
+import PetInformationCard from "../components/PetInformationCard.vue"
 
 </script>
   
