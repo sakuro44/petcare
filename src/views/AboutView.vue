@@ -20,12 +20,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "../components/Navbar.vue";
 import ListButton from "../components/ListButton.vue";
-<<<<<<< HEAD
-import MyInformation from "../components/MyInformation.vue"
-
-=======
 import PetInformationCard from "../components/PetInformationCard.vue"
->>>>>>> 3ba90b1abea5cdb75e807d7d60a782bd45994dc0
 
 </script>
   
