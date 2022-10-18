@@ -10,18 +10,18 @@
         <ListButton />
       </div>
       <div class="col-md-8">
-        <PetInformationCard/>
+        <RouterView/>
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "../components/Navbar.vue";
 import ListButton from "../components/ListButton.vue";
-import PetInformationCard from "../components/PetInformationCard.vue"
-
+import Footer from "../components/Footer.vue";
 </script>
   
   <style>
