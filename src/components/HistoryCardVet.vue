@@ -57,9 +57,9 @@ export default {
           price: "350",
         },
         {
-          caseID: "1VC123",
+          caseID: "1VC124",
           type: "นัดหมายบริการ",
-          note: "อาบน้ำ-ตัดขน",
+          note: "อาบน้ำ",
           oname: "Alex Fol",
           pname: "ส้มส้ม",
           barberID: "BB112",
@@ -77,7 +77,6 @@ export default {
 }
 .card {
   padding-top: 0px;
-  padding-bottom: 10px;
   border-radius: 25px;
   border: none;
   margin-top: 2%;

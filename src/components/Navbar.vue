@@ -22,9 +22,9 @@
     <li><a href="#">บริการ&nbsp;&nbsp;&nbsp;&dtrif;</a>
       <ul class="dropdown">
         <li><a href="#">ค้นหาแพทย์</a></li>
-        <li><router-link to="/about">นัดหมาย</router-link></li>
+        <li><router-link to="/form">นัดหมาย</router-link></li>
         <li><a href="#">แพคเกจและโปรโมชั่น</a></li>
-        <li><a href="#">คลินิกแมว</a>
+        <li><a href="">คลินิกแมว</a>
         </li>
         <li><router-link to="/bath">อาบน้ำตัดขน</router-link> </li>
         <li><router-link to="/room">ห้องพักสัตว์เลี้ยง</router-link> </li>

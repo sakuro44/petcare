@@ -27,6 +27,11 @@ const router = createRouter({
       path: "/history",
       name: "history",
       component: () => import("../components/HistoryCardVet.vue"),
+    },
+    {
+      path: "/form",
+      name: "form",
+      component: () => import("../components/AppointmentForm.vue"),
     },]
   },
   {

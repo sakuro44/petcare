@@ -22,7 +22,7 @@
           <div class="col">อายุ : {{ item.age }}</div>
         </div>
       </div>
-      <div class="col d-flex flex-wrap" style="direction: rtl">
+      <div class="col" style="direction: rtl">
         <div class="row">
           <div class="btn-submit">
             <button type="button" class="btn btn-primary">ทำการนัดหมาย</button>
@@ -35,7 +35,7 @@
               alt="calendar"
               style="height: 25px"
             />
-            &nbsp
+            &nbsp;
             <img src="../pic/clock .png" alt="clock" style="height: 25px" />
           </div>
         </div>
