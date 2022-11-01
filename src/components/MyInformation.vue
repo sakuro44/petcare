@@ -1,5 +1,5 @@
 <template>
-  <h3 style="text-align: center; padding-left: 1%">รายการการนัดหมาย</h3>
+  <h3 style="text-align: center; padding-left: 1%; padding-bottom: 3%"> รายการการนัดหมาย</h3>
   <fieldset>
     <legend>แก้ไขข้อมูลส่วนตัว</legend>
     <form style="padding: 0%;">

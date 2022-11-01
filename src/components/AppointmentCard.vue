@@ -1,5 +1,5 @@
 <template>
-  <h3 style="padding-left: 1%">รายการการนัดหมาย</h3>
+  <h3 style="text-align: center; padding-left: 1% ;padding-bottom: 0.5%">รายการการนัดหมาย</h3>
   <div class="card" v-for="item in items" v-bind:key="item.id">
     <div class="card-body container">
       <div class="row">
@@ -22,12 +22,18 @@
           <sub> - หากมาช้าเกิน 30 นาทีจากการนัดหมาย จะต้องทำการนัดหมายใหม่</sub>
         </div>
         <div class="col-sm-4 sub_details d-flex justify-content-center">
-          <h5>BOOKING REF <b>{{ item.caseID }}</b
-            ><br>
-            <BarcodeGenerator :value="'1VC123'" :format="'CODE39'" :lineColor="'#000000'" :width="1" :height="40"
-      :elementTag="'img'" />
+          <h5>
+            BOOKING REF <b>{{ item.caseID }}</b
+            ><br />
+            <BarcodeGenerator
+              :value="'1VC123'"
+              :format="'CODE39'"
+              :lineColor="'#000000'"
+              :width="1"
+              :height="40"
+              :elementTag="'img'"
+            />
           </h5>
-          
         </div>
       </div>
     </div>
@@ -40,7 +46,7 @@ import BarcodeGenerator from "./BarcodeGenerator.vue";
 
 export default {
   name: "AppointmentCard",
-  components: { BarcodeGenerator} ,
+  components: { BarcodeGenerator },
   data() {
     return {
       items: [
@@ -54,7 +60,7 @@ export default {
           caseID: "1VC123",
         },
         {
-          time: "10:30 AM",
+          time: "11:00 AM",
           date: "17 กันยายน 2565",
           oname: "Alex Fol",
           pname: "ส้มส้ม",
@@ -65,7 +71,6 @@ export default {
       ],
     };
   },
- 
 };
 </script>
 
@@ -75,12 +80,15 @@ export default {
 }
 .card {
   border: none;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 .main_details {
   position: relative;
   border-radius: 15px;
   padding: 25px;
   background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 .main_details::before {
   content: "";
@@ -94,5 +102,6 @@ export default {
   border-radius: 15px;
   padding: 30px;
   background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
 }
 </style>

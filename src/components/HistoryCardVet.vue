@@ -1,5 +1,5 @@
 <template>
-  <h3 style="padding-left: 1%">ประวัติการใช้บริการ</h3>
+  <h3 style="text-align: center; padding-left: 1%; padding-bottom: 3%">ประวัติการใช้บริการ</h3>
   <div class="card shadow" v-for="item in list" v-bind:key="item.id">
     <div class="card-body container" style="padding: 10px;">
       <div class="row">
@@ -80,7 +80,7 @@ export default {
   border-radius: 25px;
   border: none;
   margin-top: 2%;
-  background: linear-gradient(90deg, #F6C6EA 17%,#F9F9F9 100px);
+  background: linear-gradient(90deg, #3ca0e7 17%,#F9F9F9 100px);
 }
 .date {
   position: absolute;

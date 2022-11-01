@@ -112,7 +112,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 form {
   padding-top: 0px;
 }

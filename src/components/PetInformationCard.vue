@@ -1,11 +1,11 @@
 <template>
-  <h3 style="text-align: center; padding-left: 1%; padding-bottom: 2%">
+  <h3 style="text-align: center; padding-left: 1%; padding-bottom: 3%">
     ข้อมูลสัตว์เลี้ยง
   </h3>
   <div class="container card" v-for="item in petcards" v-bind:key="item.id">
     <div class="row">
       <div class="col-3" style="margin: auto; padding-left: 5%">
-        <img class="profile" src="../pic/cat_profile1.jpg" />
+        <img class="profile" src="../pic/cat_profile1.png" />
       </div>
       <div class="col-6" style="direction: ltr; padding-left: 0%">
         <b>PET ID : {{ item.petID }}</b>
@@ -15,6 +15,7 @@
         <div class="row">
           <div class="col">ชนิด : {{ item.type }}</div>
           <div class="col">สายพันธุ์ : {{ item.breeding }}</div>
+          <div class="col"></div>
         </div>
         <div class="row">
           <div class="col">เพศ : {{ item.sex }}</div>
@@ -51,22 +52,22 @@ export default {
     return {
       petcards: [
         {
-          petID: "1234",
+          petID: "0001",
           pname: "ส้มส้ม",
           type: "แมว",
-          breeding: "350",
+          breeding: "แมวจร",
           sex: "male",
-          petweigth: "12",
+          petweigth: "12 kg",
           age: "4 y",
         },
         {
-          petID: "1234",
-          pname: "ส้มส้ม",
+          petID: "0002",
+          pname: "ไคจู",
           type: "แมว",
-          breeding: "350",
+          breeding: "แมวจร",
           sex: "male",
-          petweigth: "12",
-          age: "4 y",
+          petweigth: "10 kg",
+          age: "3 y",
         },
       ],
     };
@@ -88,10 +89,7 @@ button {
   margin-bottom: 3%;
 }
 .profile {
-  width: 80px;
+  width: 75px;
   height: 80px;
-  object-fit: cover;
-  object-position: 25% 25%;
-  border-radius: 50%;
 }
 </style>
